@@ -11,14 +11,12 @@ This project is deployed as:
 
 ### Backend (Render/Railway)
 Set:
-- `FLUX_API_KEY`
-- `FLUX_API_URL`
+- `NANO_BANANA_API_KEY` (required for image generation)
+- `NANO_BANANA_MODEL` (optional, default `gemini-2.5-flash-image`)
+- `GEMINI_API_KEY` (optional fallback key name)
 - `MONGO_URL` (optional)
 - `DB_NAME`
 - `CORS_ORIGINS` (exact frontend domain(s), comma-separated)
-
-Also set the backend provider variable used by current server implementation:
-- `NANO_BANANA_API_KEY` (or `GEMINI_API_KEY`)
 
 Use `backend/env.example` as template.
 
