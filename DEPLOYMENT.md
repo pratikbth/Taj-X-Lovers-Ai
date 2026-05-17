@@ -20,20 +20,20 @@ Set:
 Also set the backend provider variable used by current server implementation:
 - `NANO_BANANA_API_KEY` (or `GEMINI_API_KEY`)
 
-Use `/home/runner/work/Taj-X-Lovers-Ai/Taj-X-Lovers-Ai/backend/env.example` as template.
+Use `backend/env.example` as template.
 
 ### Frontend (Vercel/Netlify)
 Set:
 - `REACT_APP_BACKEND_URL` (public backend URL)
 
-Use `/home/runner/work/Taj-X-Lovers-Ai/Taj-X-Lovers-Ai/frontend/env.example` as template.
+Use `frontend/env.example` as template.
 
 ---
 
 ## 2) Backend Deployment First
 
 ### Option A: Render
-This repo includes `/home/runner/work/Taj-X-Lovers-Ai/Taj-X-Lovers-Ai/render.yaml`.
+This repo includes `render.yaml`.
 
 Key settings:
 - Service root directory: `backend`
@@ -42,7 +42,7 @@ Key settings:
 - Health check: `/api/`
 
 ### Option B: Railway
-This repo includes `/home/runner/work/Taj-X-Lovers-Ai/Taj-X-Lovers-Ai/backend/Procfile`:
+This repo includes `backend/Procfile`:
 - `web: uvicorn server:app --host 0.0.0.0 --port $PORT`
 
 Set backend root directory to `backend` in Railway service settings.
@@ -62,11 +62,10 @@ After deploy, verify:
 - Output directory: `build`
 - Add env: `REACT_APP_BACKEND_URL=https://<backend-domain>`
 
-SPA fallback is configured in:
-- `/home/runner/work/Taj-X-Lovers-Ai/Taj-X-Lovers-Ai/frontend/vercel.json`
+SPA fallback is configured in `frontend/vercel.json`.
 
 ### Option B: Netlify
-This repo includes `/home/runner/work/Taj-X-Lovers-Ai/Taj-X-Lovers-Ai/netlify.toml` with:
+This repo includes `netlify.toml` with:
 - Base: `frontend`
 - Build: `npm run build`
 - Publish: `build`
