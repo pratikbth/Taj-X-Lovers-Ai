@@ -2,8 +2,63 @@ import { useRef, useState } from "react";
 import { Upload, X, Image as ImageIcon, Monitor, LayoutTemplate, ChevronDown } from "lucide-react";
 
 const ASSET = "https://customer-assets.emergentagent.com/job_luxe-design-studio-2/artifacts";
+const MAX_REFERENCE_IMAGE_SIZE = 1800;
+const REFERENCE_IMAGE_QUALITY = 0.86;
+
+const readFileAsDataUrl = (file) =>
+  new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = (event) => resolve(event.target.result);
+    reader.onerror = reject;
+    reader.readAsDataURL(file);
+  });
+
+const resizeImageFile = async (file) => {
+  const objectUrl = URL.createObjectURL(file);
+
+  try {
+    const image = await new Promise((resolve, reject) => {
+      const img = new Image();
+      img.onload = () => resolve(img);
+      img.onerror = reject;
+      img.src = objectUrl;
+    });
+
+    const largestSide = Math.max(image.naturalWidth, image.naturalHeight);
+    if (largestSide <= MAX_REFERENCE_IMAGE_SIZE) {
+      return await readFileAsDataUrl(file);
+    }
+
+    const scale = MAX_REFERENCE_IMAGE_SIZE / largestSide;
+    const canvas = document.createElement("canvas");
+    canvas.width = Math.round(image.naturalWidth * scale);
+    canvas.height = Math.round(image.naturalHeight * scale);
+
+    const ctx = canvas.getContext("2d");
+    ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+    return canvas.toDataURL("image/jpeg", REFERENCE_IMAGE_QUALITY);
+  } finally {
+    URL.revokeObjectURL(objectUrl);
+  }
+};
 
 const SPACE_OPTIONS = [
+  {
+    name: "Banquet Hall",
+    type: "BANQUET",
+    thumbnail: "/Assets/new-venue-1.jpg",
+    angles: [
+      { label: "Front View", image: "/Assets/new-venue-1.jpg" },
+    ],
+  },
+  {
+    name: "Conference Hall",
+    type: "CONFERENCE",
+    thumbnail: "/Assets/new-venue-2.jpg",
+    angles: [
+      { label: "Front View", image: "/Assets/new-venue-2.jpg" },
+    ],
+  },
   {
     name: "Terminus",
     type: "TERMINUS",
@@ -47,15 +102,16 @@ export default function Sidebar({
   const [dragOver, setDragOver] = useState(false);
   const [showUploadMenu, setShowUploadMenu] = useState(false);
 
-  const handleFileSelect = (file) => {
+  const handleFileSelect = async (file) => {
     if (!file || !file.type.startsWith("image/")) return;
-    const reader = new FileReader();
-    reader.onload = (e) => {
-      const base64 = e.target.result.split(",")[1];
-      setReferenceImage({ data: base64, preview: e.target.result, name: file.name });
-    };
-    reader.readAsDataURL(file);
-    setShowUploadMenu(false);
+    try {
+      const dataUrl = await resizeImageFile(file);
+      const base64 = dataUrl.split(",")[1];
+      setReferenceImage({ data: base64, preview: dataUrl, name: file.name });
+      setShowUploadMenu(false);
+    } catch (error) {
+      console.error("Error loading design reference:", error);
+    }
   };
 
   const handleDrop = (e) => {

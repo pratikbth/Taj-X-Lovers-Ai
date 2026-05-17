@@ -274,7 +274,7 @@ def build_prompt(req: GenerateRequest) -> str:
     if req.theme:
         parts.append(f"Theme: {req.theme}")
     if req.space:
-        parts.append(f"Venue space: {req.space} at Fairmont Mumbai")
+        parts.append(f"Venue space: {req.space} at Taj")
     parts.extend([
         "Output goal: one photorealistic transformed venue image suitable for client presentation.",
         "Hard constraints: preserve architecture, camera angle, and structural geometry.",
@@ -348,7 +348,7 @@ def build_gemini_prompt(user_text: str, context: str, mode: str, has_venue: bool
     else:
         return (
             f"REQUEST: {user_text}\n{ctx_line}\n"
-            "Generate a photorealistic beautifully decorated luxury event venue at Fairmont Mumbai. "
+            "Generate a photorealistic beautifully decorated luxury event venue at Taj. "
             "Include elaborate ceiling floral canopy or chandeliers and decorative floor treatment. No people. No text."
         )
 
@@ -856,7 +856,7 @@ async def generate_flux_variant_from_payload(
 
 @api_router.get("/")
 async def root():
-    return {"message": "Fairmont x LoversAI API"}
+    return {"message": "Taj x LoversAI API"}
 
 @api_router.post("/generate")
 async def generate_image(req: GenerateRequest):
@@ -889,7 +889,7 @@ async def generate_image(req: GenerateRequest):
         if req.function_type:
             context_parts.append(req.function_type)
         if req.space:
-            context_parts.append(f"{req.space} at Fairmont Mumbai")
+            context_parts.append(f"{req.space} at Taj")
         context_str = " | ".join(context_parts)
 
         # For service overlay, skip decoration wrapper — pass directly so waiters/staff are generated
@@ -1032,7 +1032,7 @@ async def download_pdf(req: DownloadRequest):
     width, height = A4
 
     c.setFont("Helvetica-Bold", 28)
-    c.drawCentredString(width / 2, height - 2 * inch, "Fairmont x LoversAI")
+    c.drawCentredString(width / 2, height - 2 * inch, "Taj x LoversAI")
     c.setFont("Helvetica", 16)
     c.drawCentredString(width / 2, height - 2.6 * inch, "Moodboard Collection")
     c.setFont("Helvetica-Oblique", 11)
@@ -1081,7 +1081,7 @@ async def download_ppt(req: DownloadRequest):
     txBox = slide.shapes.add_textbox(Inches(2), Inches(2.5), Inches(9), Inches(2))
     tf = txBox.text_frame
     p = tf.paragraphs[0]
-    p.text = "Fairmont x LoversAI"
+    p.text = "Taj x LoversAI"
     p.font.size = Pt(44)
     p.font.bold = True
     p.alignment = PP_ALIGN.CENTER

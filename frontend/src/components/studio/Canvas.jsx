@@ -5,9 +5,26 @@ import axios from "axios";
 const BACKEND_BASE_URL = (process.env.REACT_APP_BACKEND_URL || "http://127.0.0.1:8000").replace(/\/$/, "");
 const API = `${BACKEND_BASE_URL}/api`;
 
+const isHttpUrl = (value) => typeof value === "string" && /^https?:\/\//i.test(value);
+const isDataUrl = (value) => typeof value === "string" && value.startsWith("data:");
+
+const dataUrlToBase64 = (value) => {
+  if (!isDataUrl(value)) return null;
+  const commaIndex = value.indexOf(",");
+  return commaIndex >= 0 ? value.slice(commaIndex + 1) : null;
+};
+
 const urlToBase64 = async (url) => {
   try {
+    if (isDataUrl(url)) {
+      return dataUrlToBase64(url);
+    }
+
     const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Image request failed with ${response.status}`);
+    }
+
     const blob = await response.blob();
     return await new Promise((resolve, reject) => {
       const reader = new FileReader();
@@ -73,7 +90,9 @@ export default function Canvas({ filters, referenceImage, venueImage, selectedAn
         designImageBase64 = await urlToBase64(referenceImage.preview);
       }
 
-      const designImageUrl = referenceImage?.thumbnailUrl || referenceImage?.preview || null;
+      const designImageSourceUrl = referenceImage?.thumbnailUrl || referenceImage?.preview || null;
+      const designImageUrl = isHttpUrl(designImageSourceUrl) ? designImageSourceUrl : null;
+      const venueImageUrl = isHttpUrl(venueImage) ? venueImage : null;
       const hasVenueInput = !!venueImageBase64 || !!venueImage;
       const hasDesignInput = !!designImageBase64 || !!designImageUrl;
 
@@ -96,9 +115,9 @@ export default function Canvas({ filters, referenceImage, venueImage, selectedAn
         space: filters.space || null,
         venue_image: venueImageBase64,
         design_image: designImageBase64,
-        venue_image_url: venueImage || null,
+        venue_image_url: venueImageBase64 ? null : venueImageUrl,
         design_image_url: designImageUrl,
-        reference_image: referenceImage?.data || null,
+        reference_image: null,
         high_quality: highQualityMode,
         variant_count: targetVariants,
       };
