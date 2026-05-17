@@ -20,13 +20,13 @@ Set:
 Also set the backend provider variable used by current server implementation:
 - `NANO_BANANA_API_KEY` (or `GEMINI_API_KEY`)
 
-Use `/home/runner/work/Taj-X-Lovers-Ai/Taj-X-Lovers-Ai/backend/.env.example` as template.
+Use `/home/runner/work/Taj-X-Lovers-Ai/Taj-X-Lovers-Ai/backend/env.example` as template.
 
 ### Frontend (Vercel/Netlify)
 Set:
 - `REACT_APP_BACKEND_URL` (public backend URL)
 
-Use `/home/runner/work/Taj-X-Lovers-Ai/Taj-X-Lovers-Ai/frontend/.env.example` as template.
+Use `/home/runner/work/Taj-X-Lovers-Ai/Taj-X-Lovers-Ai/frontend/env.example` as template.
 
 ---
 
