@@ -1,0 +1,242 @@
+import { useState, useCallback } from "react";
+import { useNavigate } from "react-router-dom";
+import { ArrowLeft, ConciergeBell, FileText, LayoutGrid } from "lucide-react";
+import Sidebar from "@/components/studio/Sidebar";
+import Canvas from "@/components/studio/Canvas";
+import AngleModal from "@/components/studio/AngleModal";
+import TemplateRefModal from "@/components/studio/TemplateRefModal";
+import MoodboardModal from "@/components/studio/MoodboardModal";
+
+const BG_IMAGE = "/Assets/taj-background.png";
+
+export default function StudioPage() {
+  const navigate = useNavigate();
+  const [filters, setFilters] = useState({
+    function_type: null,
+    space: null,
+  });
+  const [referenceImage, setReferenceImage] = useState(null);
+  const [sessionId] = useState(() => crypto.randomUUID());
+  const [angleModalSpace, setAngleModalSpace] = useState(null);
+  const [selectedAngle, setSelectedAngle] = useState(null);
+  const [hoveredItem, setHoveredItem] = useState(null);
+  const [showTemplateRef, setShowTemplateRef] = useState(false);
+  const [moodboardImages, setMoodboardImages] = useState([]);
+  const [showMoodboard, setShowMoodboard] = useState(false);
+
+  const handleSpaceClick = useCallback((space) => {
+    setAngleModalSpace(space);
+  }, []);
+
+  const handleAngleSelect = useCallback((space, angle) => {
+    setFilters((prev) => ({ ...prev, space: space.name }));
+    setSelectedAngle({ space: space.name, angle: angle.label, image: angle.image });
+    setAngleModalSpace(null);
+  }, []);
+
+  const handleTemplateRefSelect = useCallback((template) => {
+    setReferenceImage({
+      data: template.thumbnail ? null : null,
+      preview: template.thumbnail || null,
+      name: `Template: ${template.title}`,
+      templateId: template.id,
+      thumbnailUrl: template.thumbnail || null,
+    });
+    setShowTemplateRef(false);
+  }, []);
+
+  const handleAddToMoodboard = useCallback((imageData, prompt) => {
+    setMoodboardImages((prev) => [
+      ...prev,
+      {
+        id: crypto.randomUUID(),
+        image_data: imageData,
+        prompt: prompt,
+        filters: { function_type: filters.function_type, space: filters.space },
+        created_at: new Date().toISOString(),
+      },
+    ]);
+  }, [filters]);
+
+  const handleRemoveFromMoodboard = useCallback((id) => {
+    setMoodboardImages((prev) => prev.filter((img) => img.id !== id));
+  }, []);
+
+  return (
+    <div className="relative h-screen w-screen overflow-hidden text-white" data-testid="studio-page">
+      {/* Background with heavy blur */}
+      <div
+        className="fixed inset-0 z-0"
+        style={{
+          backgroundImage: `url(${BG_IMAGE})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div
+          className="absolute inset-0"
+          style={{
+            backdropFilter: "blur(24px) saturate(1.2)",
+            WebkitBackdropFilter: "blur(24px) saturate(1.2)",
+            backgroundColor: "rgba(0, 0, 0, 0.3)",
+          }}
+        />
+      </div>
+
+      {/* Top Bar — glassmorphic nav */}
+      <div
+        className="relative z-20 flex items-center justify-between px-4 md:px-6 py-3 mx-4 md:mx-6 mt-3 rounded-2xl"
+        style={{
+          backdropFilter: "blur(20px) saturate(1.3)",
+          WebkitBackdropFilter: "blur(20px) saturate(1.3)",
+          background: "rgba(255, 255, 255, 0.06)",
+          border: "1px solid rgba(255, 255, 255, 0.1)",
+          boxShadow: "0 8px 32px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.06)",
+        }}
+        data-testid="studio-topbar"
+      >
+        <button
+          onClick={() => navigate("/")}
+          className="glass-button rounded-full px-4 py-2 flex items-center gap-2 text-sm"
+          style={{ fontFamily: "var(--font-body)", fontWeight: 400 }}
+          data-testid="back-to-home"
+        >
+          <ArrowLeft className="w-4 h-4" strokeWidth={1.5} />
+          <span className="hidden sm:inline">Back</span>
+        </button>
+
+        <h1
+          className="text-xl md:text-2xl text-white/90"
+          style={{ fontFamily: "var(--font-heading)", fontWeight: 400 }}
+        >
+          Design Studio
+        </h1>
+
+        <button
+          onClick={() => navigate("/templates")}
+          className="glass-button rounded-full px-4 py-2 flex items-center gap-2 text-sm"
+          style={{ fontFamily: "var(--font-body)", fontWeight: 400 }}
+          data-testid="go-to-templates"
+        >
+          <FileText className="w-4 h-4" strokeWidth={1.5} />
+          <span className="hidden sm:inline">Templates</span>
+        </button>
+
+        <button
+          onClick={() => navigate("/concierge")}
+          className="glass-button rounded-full px-4 py-2 flex items-center gap-2 text-sm"
+          style={{ fontFamily: "var(--font-body)", fontWeight: 400 }}
+          data-testid="open-concierge"
+        >
+          <ConciergeBell className="w-4 h-4" strokeWidth={1.5} />
+          <span className="hidden sm:inline">Concierge</span>
+        </button>
+
+        <button
+          onClick={() => setShowMoodboard(true)}
+          className="glass-button rounded-full px-4 py-2 flex items-center gap-2 text-sm relative"
+          style={{ fontFamily: "var(--font-body)", fontWeight: 400 }}
+          data-testid="open-moodboard"
+        >
+          <LayoutGrid className="w-4 h-4" strokeWidth={1.5} />
+          <span className="hidden sm:inline">Moodboard</span>
+          {moodboardImages.length > 0 && (
+            <span className="absolute -top-1 -right-1 bg-white/20 text-white text-[10px] rounded-full w-5 h-5 flex items-center justify-center">
+              {moodboardImages.length}
+            </span>
+          )}
+        </button>
+      </div>
+
+      {/* Main Layout */}
+      <div className="relative z-10 h-[calc(100vh-56px)] grid grid-cols-1 md:grid-cols-12 gap-4 p-4 md:p-6 pt-0 md:pt-0" style={{ gridTemplateRows: "1fr" }}>
+        {/* Sidebar */}
+        <div className="col-span-1 md:col-span-3 min-h-0 h-full overflow-hidden">
+          <Sidebar
+            filters={filters}
+            setFilters={setFilters}
+            referenceImage={referenceImage}
+            setReferenceImage={setReferenceImage}
+            onSpaceClick={handleSpaceClick}
+            onHoverItem={setHoveredItem}
+            onOpenTemplateRef={() => setShowTemplateRef(true)}
+          />
+        </div>
+
+        {/* Main Canvas */}
+        <div className="col-span-1 md:col-span-9 min-h-0 h-full">
+          <Canvas
+            filters={filters}
+            referenceImage={referenceImage}
+            venueImage={selectedAngle?.image || null}
+            sessionId={sessionId}
+            selectedAngle={selectedAngle}
+            onAddToMoodboard={handleAddToMoodboard}
+            moodboardCount={moodboardImages.length}
+          />
+        </div>
+      </div>
+
+      {/* Angle Selection Modal */}
+      {angleModalSpace && (
+        <AngleModal
+          space={angleModalSpace}
+          onSelect={handleAngleSelect}
+          onClose={() => setAngleModalSpace(null)}
+        />
+      )}
+
+      {/* Template Reference Modal */}
+      {showTemplateRef && (
+        <TemplateRefModal
+          onSelect={handleTemplateRefSelect}
+          onClose={() => setShowTemplateRef(false)}
+        />
+      )}
+
+      {/* Hover Thumbnail Tooltip — rendered at root level to avoid backdrop-filter containment */}
+      {hoveredItem && (
+        <div
+          className="fixed z-[100] pointer-events-none"
+          style={{ left: hoveredItem.x, top: hoveredItem.y }}
+          data-testid="hover-thumbnail"
+        >
+          <div
+            className="rounded-xl overflow-hidden"
+            style={{
+              width: 220,
+              backdropFilter: "blur(24px) saturate(1.4)",
+              WebkitBackdropFilter: "blur(24px) saturate(1.4)",
+              background: "rgba(0, 0, 0, 0.3)",
+              border: "1px solid rgba(255, 255, 255, 0.12)",
+              boxShadow: "0 16px 40px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.06)",
+            }}
+          >
+            <img
+              src={hoveredItem.thumbnail}
+              alt={hoveredItem.name}
+              className="w-full h-32 object-cover"
+            />
+            <div className="px-3 py-2.5" style={{ borderTop: "1px solid rgba(255, 255, 255, 0.06)" }}>
+              <p
+                className="text-white text-xs font-medium truncate"
+                style={{ fontFamily: "var(--font-body)" }}
+              >
+                {hoveredItem.name}
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Moodboard Modal */}
+      {showMoodboard && (
+        <MoodboardModal
+          images={moodboardImages}
+          onRemove={handleRemoveFromMoodboard}
+          onClose={() => setShowMoodboard(false)}
+        />
+      )}
+    </div>
+  );
+}

@@ -1,0 +1,860 @@
+INFO:     Will watch for changes in these directories: ['C:\\Users\\tiwar\\OneDrive\\Documents\\GitHub\\Fairmount-x-Loversai\\backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [19332] using StatReload
+2026-05-11 16:38:32,287 - server - INFO - MongoDB connected successfully
+INFO:     Started server process [5740]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+2026-05-11 17:13:02,695 - server - INFO - === API RECEIVED ===
+2026-05-11 17:13:02,695 - server - INFO - prompt: create this luxury mandap inside this venue at nig...
+2026-05-11 17:13:02,696 - server - INFO - function_type: Ultra-Luxury Wedding
+2026-05-11 17:13:02,696 - server - INFO - space: Infinity Ballroom
+2026-05-11 17:13:02,698 - server - INFO - venue_image provided: True, length: 612460
+2026-05-11 17:13:02,698 - server - INFO - design_image provided: True, length: 599920
+2026-05-11 17:13:02,698 - server - INFO - reference_image provided: True
+2026-05-11 17:13:02,699 - server - INFO - venue_image_url provided: True
+2026-05-11 17:13:02,699 - server - INFO - design_image_url provided: True
+2026-05-11 17:13:02,699 - server - INFO - variant_count: 1, mode: B, input_mode: dual_image
+2026-05-11 17:13:02,699 - server - INFO - gemini_prompt (first 120 chars): create this luxury mandap inside this venue at night. Perspective: Front View of Infinity Ballroom
+
+    FLOORING ELEMENT
+2026-05-11 17:13:02,700 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 17:13:24,823 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 17:13:37,764 - server - INFO - === API RECEIVED ===
+2026-05-11 17:13:37,765 - server - INFO - prompt: create this luxury mandap inside this venue at nig...
+2026-05-11 17:13:37,765 - server - INFO - function_type: Ultra-Luxury Wedding
+2026-05-11 17:13:37,765 - server - INFO - space: Infinity Ballroom
+2026-05-11 17:13:37,765 - server - INFO - venue_image provided: True, length: 3433452
+2026-05-11 17:13:37,765 - server - INFO - design_image provided: False, length: 0
+2026-05-11 17:13:37,765 - server - INFO - reference_image provided: False
+2026-05-11 17:13:37,765 - server - INFO - venue_image_url provided: False
+2026-05-11 17:13:37,766 - server - INFO - design_image_url provided: False
+2026-05-11 17:13:37,766 - server - INFO - variant_count: 1, mode: B, input_mode: venue_only
+2026-05-11 17:13:37,766 - server - INFO - gemini_prompt (first 120 chars): The VENUE IMAGE shows a fully decorated event venue. Your task is to add hospitality service staff to it.
+
+CRITICAL RULE
+2026-05-11 17:13:37,766 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 17:13:59,416 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 17:14:40,440 - server - INFO - === API RECEIVED ===
+2026-05-11 17:14:40,440 - server - INFO - prompt: create this luxury mandap inside this venue at nig...
+2026-05-11 17:14:40,440 - server - INFO - function_type: Indian Destination Wedding
+2026-05-11 17:14:40,441 - server - INFO - space: Infinity Ballroom
+2026-05-11 17:14:40,441 - server - INFO - venue_image provided: True, length: 612460
+2026-05-11 17:14:40,441 - server - INFO - design_image provided: True, length: 599920
+2026-05-11 17:14:40,441 - server - INFO - reference_image provided: True
+2026-05-11 17:14:40,441 - server - INFO - venue_image_url provided: True
+2026-05-11 17:14:40,441 - server - INFO - design_image_url provided: True
+2026-05-11 17:14:40,441 - server - INFO - variant_count: 1, mode: B, input_mode: dual_image
+2026-05-11 17:14:40,441 - server - INFO - gemini_prompt (first 120 chars): create this luxury mandap inside this venue at night. Perspective: Front View of Infinity Ballroom
+
+    FLOORING ELEMENT
+2026-05-11 17:14:40,442 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 17:15:02,857 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 17:15:07,546 - server - INFO - === API RECEIVED ===
+2026-05-11 17:15:07,546 - server - INFO - prompt: create this luxury mandap inside this venue at nig...
+2026-05-11 17:15:07,546 - server - INFO - function_type: Indian Destination Wedding
+2026-05-11 17:15:07,546 - server - INFO - space: Infinity Ballroom
+2026-05-11 17:15:07,546 - server - INFO - venue_image provided: True, length: 3499260
+2026-05-11 17:15:07,546 - server - INFO - design_image provided: False, length: 0
+2026-05-11 17:15:07,546 - server - INFO - reference_image provided: False
+2026-05-11 17:15:07,546 - server - INFO - venue_image_url provided: False
+2026-05-11 17:15:07,547 - server - INFO - design_image_url provided: False
+2026-05-11 17:15:07,547 - server - INFO - variant_count: 1, mode: B, input_mode: venue_only
+2026-05-11 17:15:07,547 - server - INFO - gemini_prompt (first 120 chars): The VENUE IMAGE shows a fully decorated event venue. Your task is to add hospitality service staff to it.
+
+CRITICAL RULE
+2026-05-11 17:15:07,547 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 17:15:43,814 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 17:16:31,010 - server - INFO - === API RECEIVED ===
+2026-05-11 17:16:31,011 - server - INFO - prompt: Luxurious outdoor evening Indian wedding mandap wi...
+2026-05-11 17:16:31,011 - server - INFO - function_type: Indian Destination Wedding
+2026-05-11 17:16:31,011 - server - INFO - space: Infinity Ballroom
+2026-05-11 17:16:31,012 - server - INFO - venue_image provided: True, length: 612460
+2026-05-11 17:16:31,012 - server - INFO - design_image provided: True, length: 599920
+2026-05-11 17:16:31,012 - server - INFO - reference_image provided: True
+2026-05-11 17:16:31,012 - server - INFO - venue_image_url provided: True
+2026-05-11 17:16:31,012 - server - INFO - design_image_url provided: True
+2026-05-11 17:16:31,013 - server - INFO - variant_count: 1, mode: B, input_mode: dual_image
+2026-05-11 17:16:31,013 - server - INFO - gemini_prompt (first 120 chars): Luxurious outdoor evening Indian wedding mandap with three circular baby's breath canopies dripping crystal chandeliers 
+2026-05-11 17:16:31,013 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 17:16:34,178 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 500 Internal Server Error"
+2026-05-11 17:16:34,189 - server - WARNING - Nano Banana transient error (gemini-2.5-flash-image), retry 1/2. Status=500, body={
+  "error": {
+    "code": 500,
+    "message": "Internal error encountered.",
+    "status": "INTERNAL"
+  }
+}
+2026-05-11 17:17:08,556 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 17:17:13,690 - server - INFO - === API RECEIVED ===
+2026-05-11 17:17:13,691 - server - INFO - prompt: Luxurious outdoor evening Indian wedding mandap wi...
+2026-05-11 17:17:13,691 - server - INFO - function_type: Indian Destination Wedding
+2026-05-11 17:17:13,691 - server - INFO - space: Infinity Ballroom
+2026-05-11 17:17:13,691 - server - INFO - venue_image provided: True, length: 3502656
+2026-05-11 17:17:13,691 - server - INFO - design_image provided: False, length: 0
+2026-05-11 17:17:13,691 - server - INFO - reference_image provided: False
+2026-05-11 17:17:13,691 - server - INFO - venue_image_url provided: False
+2026-05-11 17:17:13,691 - server - INFO - design_image_url provided: False
+2026-05-11 17:17:13,691 - server - INFO - variant_count: 1, mode: B, input_mode: venue_only
+2026-05-11 17:17:13,691 - server - INFO - gemini_prompt (first 120 chars): The VENUE IMAGE shows a fully decorated event venue. Your task is to add hospitality service staff to it.
+
+CRITICAL RULE
+2026-05-11 17:17:13,691 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 17:18:03,626 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 17:32:26,319 - server - INFO - === API RECEIVED ===
+2026-05-11 17:32:26,319 - server - INFO - prompt: wedding. Perspective: Panoramic View of Aeon Ballr...
+2026-05-11 17:32:26,320 - server - INFO - function_type: Ultra-Luxury Wedding
+2026-05-11 17:32:26,320 - server - INFO - space: Aeon Ballroom
+2026-05-11 17:32:26,320 - server - INFO - venue_image provided: True, length: 2794108
+2026-05-11 17:32:26,320 - server - INFO - design_image provided: True, length: 494584
+2026-05-11 17:32:26,320 - server - INFO - reference_image provided: True
+2026-05-11 17:32:26,320 - server - INFO - venue_image_url provided: True
+2026-05-11 17:32:26,320 - server - INFO - design_image_url provided: True
+2026-05-11 17:32:26,320 - server - INFO - variant_count: 1, mode: B, input_mode: dual_image
+2026-05-11 17:32:26,320 - server - INFO - gemini_prompt (first 120 chars): wedding. Perspective: Panoramic View of Aeon Ballroom
+
+    FLOORING ELEMENT: The flooring must be luxurious, elegant, an
+2026-05-11 17:32:26,320 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 17:32:57,762 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 17:33:17,884 - server - INFO - === API RECEIVED ===
+2026-05-11 17:33:17,884 - server - INFO - prompt: wedding. Perspective: Panoramic View of Aeon Ballr...
+2026-05-11 17:33:17,884 - server - INFO - function_type: Ultra-Luxury Wedding
+2026-05-11 17:33:17,884 - server - INFO - space: Aeon Ballroom
+2026-05-11 17:33:17,885 - server - INFO - venue_image provided: True, length: 2794108
+2026-05-11 17:33:17,885 - server - INFO - design_image provided: True, length: 494584
+2026-05-11 17:33:17,885 - server - INFO - reference_image provided: True
+2026-05-11 17:33:17,885 - server - INFO - venue_image_url provided: True
+2026-05-11 17:33:17,886 - server - INFO - design_image_url provided: True
+2026-05-11 17:33:17,886 - server - INFO - variant_count: 1, mode: B, input_mode: dual_image
+2026-05-11 17:33:17,886 - server - INFO - gemini_prompt (first 120 chars): wedding. Perspective: Panoramic View of Aeon Ballroom
+
+    FLOORING ELEMENT: The flooring must be luxurious, elegant, an
+2026-05-11 17:33:17,886 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 17:33:47,897 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 17:33:54,247 - server - INFO - === API RECEIVED ===
+2026-05-11 17:33:54,248 - server - INFO - prompt: wedding. Perspective: Panoramic View of Aeon Ballr...
+2026-05-11 17:33:54,248 - server - INFO - function_type: Ultra-Luxury Wedding
+2026-05-11 17:33:54,248 - server - INFO - space: Aeon Ballroom
+2026-05-11 17:33:54,248 - server - INFO - venue_image provided: True, length: 3610368
+2026-05-11 17:33:54,248 - server - INFO - design_image provided: False, length: 0
+2026-05-11 17:33:54,248 - server - INFO - reference_image provided: False
+2026-05-11 17:33:54,248 - server - INFO - venue_image_url provided: False
+2026-05-11 17:33:54,248 - server - INFO - design_image_url provided: False
+2026-05-11 17:33:54,248 - server - INFO - variant_count: 1, mode: B, input_mode: venue_only
+2026-05-11 17:33:54,249 - server - INFO - gemini_prompt (first 120 chars): The VENUE IMAGE shows a fully decorated event venue. Your task is to add hospitality service staff to it.
+
+CRITICAL RULE
+2026-05-11 17:33:54,249 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 17:34:34,984 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 17:36:28,617 - server - INFO - === API RECEIVED ===
+2026-05-11 17:36:28,617 - server - INFO - prompt: Luxurious indoor ballroom wedding decor with a den...
+2026-05-11 17:36:28,617 - server - INFO - function_type: Corporate Conference
+2026-05-11 17:36:28,617 - server - INFO - space: Grand Terminus 1
+2026-05-11 17:36:28,617 - server - INFO - venue_image provided: True, length: 198704
+2026-05-11 17:36:28,617 - server - INFO - design_image provided: True, length: 1332120
+2026-05-11 17:36:28,618 - server - INFO - reference_image provided: True
+2026-05-11 17:36:28,618 - server - INFO - venue_image_url provided: True
+2026-05-11 17:36:28,618 - server - INFO - design_image_url provided: True
+2026-05-11 17:36:28,618 - server - INFO - variant_count: 1, mode: B, input_mode: dual_image
+2026-05-11 17:36:28,618 - server - INFO - gemini_prompt (first 120 chars): Luxurious indoor ballroom wedding decor with a dense ceiling canopy of purple, lavender, teal, and iridescent balloons i
+2026-05-11 17:36:28,618 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 17:36:58,957 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 17:37:14,932 - server - INFO - === API RECEIVED ===
+2026-05-11 17:37:14,932 - server - INFO - prompt: Luxurious indoor ballroom wedding decor with a den...
+2026-05-11 17:37:14,932 - server - INFO - function_type: Corporate Conference
+2026-05-11 17:37:14,932 - server - INFO - space: Grand Terminus 1
+2026-05-11 17:37:14,932 - server - INFO - venue_image provided: True, length: 3395608
+2026-05-11 17:37:14,932 - server - INFO - design_image provided: False, length: 0
+2026-05-11 17:37:14,932 - server - INFO - reference_image provided: False
+2026-05-11 17:37:14,933 - server - INFO - venue_image_url provided: False
+2026-05-11 17:37:14,933 - server - INFO - design_image_url provided: False
+2026-05-11 17:37:14,933 - server - INFO - variant_count: 1, mode: B, input_mode: venue_only
+2026-05-11 17:37:14,933 - server - INFO - gemini_prompt (first 120 chars): The VENUE IMAGE shows a fully decorated event venue. Your task is to add hospitality service staff to it.
+
+CRITICAL RULE
+2026-05-11 17:37:14,933 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 17:38:02,097 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 17:38:29,052 - server - INFO - === API RECEIVED ===
+2026-05-11 17:38:29,053 - server - INFO - prompt: wedding. Perspective: Front View of Grand Terminus...
+2026-05-11 17:38:29,053 - server - INFO - function_type: Corporate Conference
+2026-05-11 17:38:29,053 - server - INFO - space: Grand Terminus 1
+2026-05-11 17:38:29,054 - server - INFO - venue_image provided: True, length: 198704
+2026-05-11 17:38:29,054 - server - INFO - design_image provided: True, length: 1332120
+2026-05-11 17:38:29,054 - server - INFO - reference_image provided: True
+2026-05-11 17:38:29,054 - server - INFO - venue_image_url provided: True
+2026-05-11 17:38:29,054 - server - INFO - design_image_url provided: True
+2026-05-11 17:38:29,054 - server - INFO - variant_count: 1, mode: B, input_mode: dual_image
+2026-05-11 17:38:29,054 - server - INFO - gemini_prompt (first 120 chars): wedding. Perspective: Front View of Grand Terminus 1
+
+    FLOORING ELEMENT: The flooring must be luxurious, elegant, and
+2026-05-11 17:38:29,055 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 17:38:33,671 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 503 Service Unavailable"
+2026-05-11 17:38:33,688 - server - WARNING - Nano Banana transient error (gemini-2.5-flash-image), retry 1/2. Status=503, body={
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+2026-05-11 17:38:56,571 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 17:39:10,016 - server - INFO - === API RECEIVED ===
+2026-05-11 17:39:10,016 - server - INFO - prompt: wedding. Perspective: Front View of Grand Terminus...
+2026-05-11 17:39:10,016 - server - INFO - function_type: Corporate Conference
+2026-05-11 17:39:10,016 - server - INFO - space: Grand Terminus 1
+2026-05-11 17:39:10,016 - server - INFO - venue_image provided: True, length: 3525360
+2026-05-11 17:39:10,017 - server - INFO - design_image provided: False, length: 0
+2026-05-11 17:39:10,017 - server - INFO - reference_image provided: False
+2026-05-11 17:39:10,017 - server - INFO - venue_image_url provided: False
+2026-05-11 17:39:10,017 - server - INFO - design_image_url provided: False
+2026-05-11 17:39:10,017 - server - INFO - variant_count: 1, mode: B, input_mode: venue_only
+2026-05-11 17:39:10,017 - server - INFO - gemini_prompt (first 120 chars): The VENUE IMAGE shows a fully decorated event venue. Your task is to add hospitality service staff to it.
+
+CRITICAL RULE
+2026-05-11 17:39:10,017 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 17:39:51,790 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 17:40:47,989 - server - INFO - === API RECEIVED ===
+2026-05-11 17:40:47,990 - server - INFO - prompt: wedding. Perspective: Panoramic View of Aeon Ballr...
+2026-05-11 17:40:47,990 - server - INFO - function_type: None
+2026-05-11 17:40:47,990 - server - INFO - space: Aeon Ballroom
+2026-05-11 17:40:47,990 - server - INFO - venue_image provided: True, length: 2794108
+2026-05-11 17:40:47,991 - server - INFO - design_image provided: True, length: 494584
+2026-05-11 17:40:47,991 - server - INFO - reference_image provided: True
+2026-05-11 17:40:47,992 - server - INFO - venue_image_url provided: True
+2026-05-11 17:40:47,992 - server - INFO - design_image_url provided: True
+2026-05-11 17:40:47,992 - server - INFO - variant_count: 1, mode: B, input_mode: dual_image
+2026-05-11 17:40:47,992 - server - INFO - gemini_prompt (first 120 chars): wedding. Perspective: Panoramic View of Aeon Ballroom
+
+    FLOORING ELEMENT: The flooring must be luxurious, elegant, an
+2026-05-11 17:40:47,992 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 17:41:18,976 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 17:41:24,942 - server - INFO - === API RECEIVED ===
+2026-05-11 17:41:24,942 - server - INFO - prompt: wedding. Perspective: Panoramic View of Aeon Ballr...
+2026-05-11 17:41:24,943 - server - INFO - function_type: None
+2026-05-11 17:41:24,943 - server - INFO - space: Aeon Ballroom
+2026-05-11 17:41:24,943 - server - INFO - venue_image provided: True, length: 3680280
+2026-05-11 17:41:24,943 - server - INFO - design_image provided: False, length: 0
+2026-05-11 17:41:24,943 - server - INFO - reference_image provided: False
+2026-05-11 17:41:24,944 - server - INFO - venue_image_url provided: False
+2026-05-11 17:41:24,944 - server - INFO - design_image_url provided: False
+2026-05-11 17:41:24,944 - server - INFO - variant_count: 1, mode: B, input_mode: venue_only
+2026-05-11 17:41:24,944 - server - INFO - gemini_prompt (first 120 chars): The VENUE IMAGE shows a fully decorated event venue. Your task is to add hospitality service staff to it.
+
+CRITICAL RULE
+2026-05-11 17:41:24,944 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 17:41:52,796 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 18:01:37,800 - server - INFO - === API RECEIVED ===
+2026-05-11 18:01:37,801 - server - INFO - prompt: Grand indoor concert hall venue with two massive g...
+2026-05-11 18:01:37,802 - server - INFO - function_type: Fashion Show
+2026-05-11 18:01:37,802 - server - INFO - space: Infinity Ballroom
+2026-05-11 18:01:37,802 - server - INFO - venue_image provided: True, length: 612460
+2026-05-11 18:01:37,802 - server - INFO - design_image provided: True, length: 422728
+2026-05-11 18:01:37,802 - server - INFO - reference_image provided: True
+2026-05-11 18:01:37,802 - server - INFO - venue_image_url provided: True
+2026-05-11 18:01:37,803 - server - INFO - design_image_url provided: True
+2026-05-11 18:01:37,803 - server - INFO - variant_count: 1, mode: B, input_mode: dual_image
+2026-05-11 18:01:37,803 - server - INFO - gemini_prompt (first 120 chars): Grand indoor concert hall venue with two massive glowing red-orange circular ring lights suspended from a black industri
+2026-05-11 18:01:37,803 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 18:01:55,068 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 18:01:59,295 - server - INFO - === API RECEIVED ===
+2026-05-11 18:01:59,296 - server - INFO - prompt: Grand indoor concert hall venue with two massive g...
+2026-05-11 18:01:59,296 - server - INFO - function_type: Fashion Show
+2026-05-11 18:01:59,296 - server - INFO - space: Infinity Ballroom
+2026-05-11 18:01:59,296 - server - INFO - venue_image provided: True, length: 3492864
+2026-05-11 18:01:59,296 - server - INFO - design_image provided: False, length: 0
+2026-05-11 18:01:59,296 - server - INFO - reference_image provided: False
+2026-05-11 18:01:59,296 - server - INFO - venue_image_url provided: False
+2026-05-11 18:01:59,296 - server - INFO - design_image_url provided: False
+2026-05-11 18:01:59,296 - server - INFO - variant_count: 1, mode: B, input_mode: venue_only
+2026-05-11 18:01:59,296 - server - INFO - gemini_prompt (first 120 chars): The VENUE IMAGE shows a fully decorated event venue. Your task is to add hospitality service staff to it.
+
+CRITICAL RULE
+2026-05-11 18:01:59,297 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 18:02:19,355 - server - INFO - === API RECEIVED ===
+2026-05-11 18:02:19,356 - server - INFO - prompt: Luxurious indoor Mercedes SUV product launch in a ...
+2026-05-11 18:02:19,356 - server - INFO - function_type: Product Launch
+2026-05-11 18:02:19,357 - server - INFO - space: Aeon Ballroom
+2026-05-11 18:02:19,357 - server - INFO - venue_image provided: True, length: 2794108
+2026-05-11 18:02:19,357 - server - INFO - design_image provided: True, length: 419236
+2026-05-11 18:02:19,358 - server - INFO - reference_image provided: True
+2026-05-11 18:02:19,358 - server - INFO - venue_image_url provided: True
+2026-05-11 18:02:19,358 - server - INFO - design_image_url provided: True
+2026-05-11 18:02:19,358 - server - INFO - variant_count: 1, mode: B, input_mode: dual_image
+2026-05-11 18:02:19,358 - server - INFO - gemini_prompt (first 120 chars): Luxurious indoor Mercedes SUV product launch in a grand ballroom with a glossy black marble floor, the sleek black Merce
+2026-05-11 18:02:19,358 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 18:02:33,748 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 18:02:54,379 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 18:03:02,845 - server - INFO - === API RECEIVED ===
+2026-05-11 18:03:02,845 - server - INFO - prompt: Luxurious indoor Mercedes SUV product launch in a ...
+2026-05-11 18:03:02,845 - server - INFO - function_type: Product Launch
+2026-05-11 18:03:02,846 - server - INFO - space: Aeon Ballroom
+2026-05-11 18:03:02,846 - server - INFO - venue_image provided: True, length: 3566944
+2026-05-11 18:03:02,846 - server - INFO - design_image provided: False, length: 0
+2026-05-11 18:03:02,846 - server - INFO - reference_image provided: False
+2026-05-11 18:03:02,846 - server - INFO - venue_image_url provided: False
+2026-05-11 18:03:02,846 - server - INFO - design_image_url provided: False
+2026-05-11 18:03:02,846 - server - INFO - variant_count: 1, mode: B, input_mode: venue_only
+2026-05-11 18:03:02,846 - server - INFO - gemini_prompt (first 120 chars): The VENUE IMAGE shows a fully decorated event venue. Your task is to add hospitality service staff to it.
+
+CRITICAL RULE
+2026-05-11 18:03:02,846 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 18:03:39,494 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 18:06:31,318 - server - INFO - === API RECEIVED ===
+2026-05-11 18:06:31,319 - server - INFO - prompt: Luxurious outdoor evening Indian wedding mandap wi...
+2026-05-11 18:06:31,319 - server - INFO - function_type: Ultra-Luxury Wedding
+2026-05-11 18:06:31,319 - server - INFO - space: Infinity Ballroom
+2026-05-11 18:06:31,319 - server - INFO - venue_image provided: True, length: 612460
+2026-05-11 18:06:31,319 - server - INFO - design_image provided: True, length: 599920
+2026-05-11 18:06:31,319 - server - INFO - reference_image provided: True
+2026-05-11 18:06:31,319 - server - INFO - venue_image_url provided: True
+2026-05-11 18:06:31,319 - server - INFO - design_image_url provided: True
+2026-05-11 18:06:31,319 - server - INFO - variant_count: 1, mode: B, input_mode: dual_image
+2026-05-11 18:06:31,319 - server - INFO - gemini_prompt (first 120 chars): Luxurious outdoor evening Indian wedding mandap with three circular baby's breath canopies dripping crystal chandeliers 
+2026-05-11 18:06:31,320 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 18:07:10,875 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 18:10:30,055 - server - INFO - === API RECEIVED ===
+2026-05-11 18:10:30,056 - server - INFO - prompt: Luxurious outdoor nighttime poolside party with a ...
+2026-05-11 18:10:30,056 - server - INFO - function_type: Corporate Conference
+2026-05-11 18:10:30,056 - server - INFO - space: Sky Terrace
+2026-05-11 18:10:30,056 - server - INFO - venue_image provided: True, length: 11384424
+2026-05-11 18:10:30,056 - server - INFO - design_image provided: True, length: 582804
+2026-05-11 18:10:30,056 - server - INFO - reference_image provided: True
+2026-05-11 18:10:30,056 - server - INFO - venue_image_url provided: True
+2026-05-11 18:10:30,056 - server - INFO - design_image_url provided: True
+2026-05-11 18:10:30,056 - server - INFO - variant_count: 1, mode: B, input_mode: dual_image
+2026-05-11 18:10:30,056 - server - INFO - gemini_prompt (first 120 chars): Luxurious outdoor nighttime poolside party with a magical canopy of thousands of cascading fairy lights and starburst ch
+2026-05-11 18:10:30,056 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 18:12:28,409 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 18:12:38,361 - server - INFO - === API RECEIVED ===
+2026-05-11 18:12:38,362 - server - INFO - prompt: Luxurious outdoor nighttime poolside party with a ...
+2026-05-11 18:12:38,362 - server - INFO - function_type: Corporate Conference
+2026-05-11 18:12:38,362 - server - INFO - space: Sky Terrace
+2026-05-11 18:12:38,362 - server - INFO - venue_image provided: True, length: 3410860
+2026-05-11 18:12:38,362 - server - INFO - design_image provided: False, length: 0
+2026-05-11 18:12:38,362 - server - INFO - reference_image provided: False
+2026-05-11 18:12:38,362 - server - INFO - venue_image_url provided: False
+2026-05-11 18:12:38,363 - server - INFO - design_image_url provided: False
+2026-05-11 18:12:38,363 - server - INFO - variant_count: 1, mode: B, input_mode: venue_only
+2026-05-11 18:12:38,363 - server - INFO - gemini_prompt (first 120 chars): The VENUE IMAGE shows a fully decorated event venue. Your task is to add hospitality service staff to it.
+
+CRITICAL RULE
+2026-05-11 18:12:38,363 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 18:13:25,495 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 18:13:50,821 - server - INFO - === API RECEIVED ===
+2026-05-11 18:13:50,822 - server - INFO - prompt: Luxurious outdoor nighttime poolside party with a ...
+2026-05-11 18:13:50,822 - server - INFO - function_type: Corporate Conference
+2026-05-11 18:13:50,822 - server - INFO - space: Sky Terrace
+2026-05-11 18:13:50,822 - server - INFO - venue_image provided: True, length: 11013180
+2026-05-11 18:13:50,822 - server - INFO - design_image provided: True, length: 582804
+2026-05-11 18:13:50,822 - server - INFO - reference_image provided: True
+2026-05-11 18:13:50,822 - server - INFO - venue_image_url provided: True
+2026-05-11 18:13:50,822 - server - INFO - design_image_url provided: True
+2026-05-11 18:13:50,823 - server - INFO - variant_count: 1, mode: B, input_mode: dual_image
+2026-05-11 18:13:50,823 - server - INFO - gemini_prompt (first 120 chars): Luxurious outdoor nighttime poolside party with a magical canopy of thousands of cascading fairy lights and starburst ch
+2026-05-11 18:13:50,823 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 18:15:23,717 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 18:15:33,424 - server - INFO - === API RECEIVED ===
+2026-05-11 18:15:33,424 - server - INFO - prompt: Luxurious outdoor nighttime poolside party with a ...
+2026-05-11 18:15:33,424 - server - INFO - function_type: Corporate Conference
+2026-05-11 18:15:33,424 - server - INFO - space: Sky Terrace
+2026-05-11 18:15:33,424 - server - INFO - venue_image provided: True, length: 3634380
+2026-05-11 18:15:33,424 - server - INFO - design_image provided: False, length: 0
+2026-05-11 18:15:33,424 - server - INFO - reference_image provided: False
+2026-05-11 18:15:33,424 - server - INFO - venue_image_url provided: False
+2026-05-11 18:15:33,424 - server - INFO - design_image_url provided: False
+2026-05-11 18:15:33,424 - server - INFO - variant_count: 1, mode: B, input_mode: venue_only
+2026-05-11 18:15:33,424 - server - INFO - gemini_prompt (first 120 chars): The VENUE IMAGE shows a fully decorated event venue. Your task is to add hospitality service staff to it.
+
+CRITICAL RULE
+2026-05-11 18:15:33,424 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 18:15:59,261 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 19:03:17,987 - server - INFO - === API RECEIVED ===
+2026-05-11 19:03:17,987 - server - INFO - prompt: place this concert stage inside this ballroom. Per...
+2026-05-11 19:03:17,988 - server - INFO - function_type: Fashion Show
+2026-05-11 19:03:17,988 - server - INFO - space: Infinity Ballroom
+2026-05-11 19:03:17,988 - server - INFO - venue_image provided: True, length: 759216
+2026-05-11 19:03:17,988 - server - INFO - design_image provided: True, length: 422728
+2026-05-11 19:03:17,988 - server - INFO - reference_image provided: True
+2026-05-11 19:03:17,988 - server - INFO - venue_image_url provided: True
+2026-05-11 19:03:17,988 - server - INFO - design_image_url provided: True
+2026-05-11 19:03:17,988 - server - INFO - variant_count: 1, mode: B, input_mode: dual_image
+2026-05-11 19:03:17,988 - server - INFO - gemini_prompt (first 120 chars): place this concert stage inside this ballroom. Perspective: Right View of Infinity Ballroom
+
+    FLOORING ELEMENT: The f
+2026-05-11 19:03:17,988 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 19:03:37,155 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 19:03:38,580 - server - INFO - === API RECEIVED ===
+2026-05-11 19:03:38,581 - server - INFO - prompt: place this concert stage inside this ballroom. Per...
+2026-05-11 19:03:38,581 - server - INFO - function_type: Fashion Show
+2026-05-11 19:03:38,581 - server - INFO - space: Infinity Ballroom
+2026-05-11 19:03:38,581 - server - INFO - venue_image provided: True, length: 3648520
+2026-05-11 19:03:38,581 - server - INFO - design_image provided: False, length: 0
+2026-05-11 19:03:38,581 - server - INFO - reference_image provided: False
+2026-05-11 19:03:38,581 - server - INFO - venue_image_url provided: False
+2026-05-11 19:03:38,581 - server - INFO - design_image_url provided: False
+2026-05-11 19:03:38,582 - server - INFO - variant_count: 1, mode: B, input_mode: venue_only
+2026-05-11 19:03:38,582 - server - INFO - gemini_prompt (first 120 chars): The VENUE IMAGE shows a fully decorated event venue. Your task is to add hospitality service staff to it.
+
+CRITICAL RULE
+2026-05-11 19:03:38,582 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 19:03:49,826 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 19:03:49,833 - server - ERROR - Nano Banana generation failed: Nano Banana returned no image — I'm sorry, I cannot fulfill that request. I am unable to generate images of fashion shows.
+2026-05-11 19:04:37,548 - server - INFO - === API RECEIVED ===
+2026-05-11 19:04:37,548 - server - INFO - prompt: concert. Perspective: Front View of Infinity Ballr...
+2026-05-11 19:04:37,548 - server - INFO - function_type: Fashion Show
+2026-05-11 19:04:37,548 - server - INFO - space: Infinity Ballroom
+2026-05-11 19:04:37,549 - server - INFO - venue_image provided: True, length: 612460
+2026-05-11 19:04:37,549 - server - INFO - design_image provided: True, length: 422728
+2026-05-11 19:04:37,549 - server - INFO - reference_image provided: True
+2026-05-11 19:04:37,549 - server - INFO - venue_image_url provided: True
+2026-05-11 19:04:37,549 - server - INFO - design_image_url provided: True
+2026-05-11 19:04:37,549 - server - INFO - variant_count: 1, mode: B, input_mode: dual_image
+2026-05-11 19:04:37,549 - server - INFO - gemini_prompt (first 120 chars): concert. Perspective: Front View of Infinity Ballroom
+
+    FLOORING ELEMENT: The flooring must be luxurious, elegant, an
+2026-05-11 19:04:37,550 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 19:05:05,772 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 19:05:09,835 - server - INFO - === API RECEIVED ===
+2026-05-11 19:05:09,835 - server - INFO - prompt: concert. Perspective: Front View of Infinity Ballr...
+2026-05-11 19:05:09,835 - server - INFO - function_type: Fashion Show
+2026-05-11 19:05:09,835 - server - INFO - space: Infinity Ballroom
+2026-05-11 19:05:09,835 - server - INFO - venue_image provided: True, length: 3605368
+2026-05-11 19:05:09,835 - server - INFO - design_image provided: False, length: 0
+2026-05-11 19:05:09,835 - server - INFO - reference_image provided: False
+2026-05-11 19:05:09,835 - server - INFO - venue_image_url provided: False
+2026-05-11 19:05:09,835 - server - INFO - design_image_url provided: False
+2026-05-11 19:05:09,835 - server - INFO - variant_count: 1, mode: B, input_mode: venue_only
+2026-05-11 19:05:09,835 - server - INFO - gemini_prompt (first 120 chars): The VENUE IMAGE shows a fully decorated event venue. Your task is to add hospitality service staff to it.
+
+CRITICAL RULE
+2026-05-11 19:05:09,835 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 19:05:43,155 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 19:07:26,921 - server - INFO - === API RECEIVED ===
+2026-05-11 19:07:26,922 - server - INFO - prompt: mercedes product launch. Perspective: Panoramic Vi...
+2026-05-11 19:07:26,922 - server - INFO - function_type: Product Launch
+2026-05-11 19:07:26,922 - server - INFO - space: Aeon Ballroom
+2026-05-11 19:07:26,922 - server - INFO - venue_image provided: True, length: 2794108
+2026-05-11 19:07:26,922 - server - INFO - design_image provided: True, length: 419236
+2026-05-11 19:07:26,922 - server - INFO - reference_image provided: True
+2026-05-11 19:07:26,922 - server - INFO - venue_image_url provided: True
+2026-05-11 19:07:26,922 - server - INFO - design_image_url provided: True
+2026-05-11 19:07:26,922 - server - INFO - variant_count: 1, mode: B, input_mode: dual_image
+2026-05-11 19:07:26,922 - server - INFO - gemini_prompt (first 120 chars): mercedes product launch. Perspective: Panoramic View of Aeon Ballroom
+
+    FLOORING ELEMENT: The flooring must be luxuri
+2026-05-11 19:07:26,922 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 19:07:57,841 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 19:08:16,118 - server - INFO - === API RECEIVED ===
+2026-05-11 19:08:16,118 - server - INFO - prompt: mercedes product launch. Perspective: Panoramic Vi...
+2026-05-11 19:08:16,118 - server - INFO - function_type: Product Launch
+2026-05-11 19:08:16,118 - server - INFO - space: Aeon Ballroom
+2026-05-11 19:08:16,118 - server - INFO - venue_image provided: True, length: 3767200
+2026-05-11 19:08:16,118 - server - INFO - design_image provided: False, length: 0
+2026-05-11 19:08:16,118 - server - INFO - reference_image provided: False
+2026-05-11 19:08:16,118 - server - INFO - venue_image_url provided: False
+2026-05-11 19:08:16,119 - server - INFO - design_image_url provided: False
+2026-05-11 19:08:16,119 - server - INFO - variant_count: 1, mode: B, input_mode: venue_only
+2026-05-11 19:08:16,119 - server - INFO - gemini_prompt (first 120 chars): The VENUE IMAGE shows a fully decorated event venue. Your task is to add hospitality service staff to it.
+
+CRITICAL RULE
+2026-05-11 19:08:16,119 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 19:08:45,962 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 19:10:21,051 - server - INFO - === API RECEIVED ===
+2026-05-11 19:10:21,051 - server - INFO - prompt: a luxury coperate poolside party in night. Perspec...
+2026-05-11 19:10:21,051 - server - INFO - function_type: Corporate Conference
+2026-05-11 19:10:21,051 - server - INFO - space: Sky Terrace
+2026-05-11 19:10:21,051 - server - INFO - venue_image provided: True, length: 11013180
+2026-05-11 19:10:21,051 - server - INFO - design_image provided: True, length: 582804
+2026-05-11 19:10:21,051 - server - INFO - reference_image provided: True
+2026-05-11 19:10:21,052 - server - INFO - venue_image_url provided: True
+2026-05-11 19:10:21,052 - server - INFO - design_image_url provided: True
+2026-05-11 19:10:21,052 - server - INFO - variant_count: 1, mode: B, input_mode: dual_image
+2026-05-11 19:10:21,052 - server - INFO - gemini_prompt (first 120 chars): a luxury coperate poolside party in night. Perspective: Left View of Sky Terrace
+
+    FLOORING ELEMENT: The flooring mus
+2026-05-11 19:10:21,052 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 19:12:00,389 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 19:12:18,565 - server - INFO - === API RECEIVED ===
+2026-05-11 19:12:18,565 - server - INFO - prompt: a luxury coperate poolside party in night. Perspec...
+2026-05-11 19:12:18,565 - server - INFO - function_type: Corporate Conference
+2026-05-11 19:12:18,565 - server - INFO - space: Sky Terrace
+2026-05-11 19:12:18,565 - server - INFO - venue_image provided: True, length: 3804312
+2026-05-11 19:12:18,565 - server - INFO - design_image provided: False, length: 0
+2026-05-11 19:12:18,565 - server - INFO - reference_image provided: False
+2026-05-11 19:12:18,565 - server - INFO - venue_image_url provided: False
+2026-05-11 19:12:18,565 - server - INFO - design_image_url provided: False
+2026-05-11 19:12:18,565 - server - INFO - variant_count: 1, mode: B, input_mode: venue_only
+2026-05-11 19:12:18,565 - server - INFO - gemini_prompt (first 120 chars): The VENUE IMAGE shows a fully decorated event venue. Your task is to add hospitality service staff to it.
+
+CRITICAL RULE
+2026-05-11 19:12:18,565 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 19:12:53,557 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 19:16:35,233 - server - INFO - === API RECEIVED ===
+2026-05-11 19:16:35,233 - server - INFO - prompt: mercedes product launch. Perspective: Panoramic Vi...
+2026-05-11 19:16:35,234 - server - INFO - function_type: Product Launch
+2026-05-11 19:16:35,234 - server - INFO - space: Aeon Ballroom
+2026-05-11 19:16:35,234 - server - INFO - venue_image provided: True, length: 2794108
+2026-05-11 19:16:35,234 - server - INFO - design_image provided: True, length: 440524
+2026-05-11 19:16:35,234 - server - INFO - reference_image provided: True
+2026-05-11 19:16:35,235 - server - INFO - venue_image_url provided: True
+2026-05-11 19:16:35,235 - server - INFO - design_image_url provided: True
+2026-05-11 19:16:35,235 - server - INFO - variant_count: 1, mode: B, input_mode: dual_image
+2026-05-11 19:16:35,236 - server - INFO - gemini_prompt (first 120 chars): mercedes product launch. Perspective: Panoramic View of Aeon Ballroom
+
+    FLOORING ELEMENT: The flooring must be luxuri
+2026-05-11 19:16:35,236 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 19:17:11,730 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 19:17:20,416 - server - INFO - === API RECEIVED ===
+2026-05-11 19:17:20,416 - server - INFO - prompt: mercedes product launch. Perspective: Panoramic Vi...
+2026-05-11 19:17:20,416 - server - INFO - function_type: Product Launch
+2026-05-11 19:17:20,416 - server - INFO - space: Aeon Ballroom
+2026-05-11 19:17:20,416 - server - INFO - venue_image provided: True, length: 3143104
+2026-05-11 19:17:20,416 - server - INFO - design_image provided: False, length: 0
+2026-05-11 19:17:20,416 - server - INFO - reference_image provided: False
+2026-05-11 19:17:20,417 - server - INFO - venue_image_url provided: False
+2026-05-11 19:17:20,417 - server - INFO - design_image_url provided: False
+2026-05-11 19:17:20,417 - server - INFO - variant_count: 1, mode: B, input_mode: venue_only
+2026-05-11 19:17:20,417 - server - INFO - gemini_prompt (first 120 chars): The VENUE IMAGE shows a fully decorated event venue. Your task is to add hospitality service staff to it.
+
+CRITICAL RULE
+2026-05-11 19:17:20,417 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 19:17:52,849 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 19:18:46,004 - server - INFO - === API RECEIVED ===
+2026-05-11 19:18:46,004 - server - INFO - prompt: mercedes product launch. Perspective: Panoramic Vi...
+2026-05-11 19:18:46,004 - server - INFO - function_type: Product Launch
+2026-05-11 19:18:46,004 - server - INFO - space: Aeon Ballroom
+2026-05-11 19:18:46,004 - server - INFO - venue_image provided: True, length: 2794108
+2026-05-11 19:18:46,004 - server - INFO - design_image provided: True, length: 13388
+2026-05-11 19:18:46,004 - server - INFO - reference_image provided: True
+2026-05-11 19:18:46,005 - server - INFO - venue_image_url provided: True
+2026-05-11 19:18:46,011 - server - INFO - design_image_url provided: True
+2026-05-11 19:18:46,012 - server - INFO - variant_count: 1, mode: B, input_mode: dual_image
+2026-05-11 19:18:46,012 - server - INFO - gemini_prompt (first 120 chars): mercedes product launch. Perspective: Panoramic View of Aeon Ballroom
+
+    FLOORING ELEMENT: The flooring must be luxuri
+2026-05-11 19:18:46,012 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 19:19:15,828 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 19:19:20,019 - server - INFO - === API RECEIVED ===
+2026-05-11 19:19:20,019 - server - INFO - prompt: mercedes product launch. Perspective: Panoramic Vi...
+2026-05-11 19:19:20,019 - server - INFO - function_type: Product Launch
+2026-05-11 19:19:20,019 - server - INFO - space: Aeon Ballroom
+2026-05-11 19:19:20,020 - server - INFO - venue_image provided: True, length: 3655520
+2026-05-11 19:19:20,020 - server - INFO - design_image provided: False, length: 0
+2026-05-11 19:19:20,020 - server - INFO - reference_image provided: False
+2026-05-11 19:19:20,020 - server - INFO - venue_image_url provided: False
+2026-05-11 19:19:20,020 - server - INFO - design_image_url provided: False
+2026-05-11 19:19:20,020 - server - INFO - variant_count: 1, mode: B, input_mode: venue_only
+2026-05-11 19:19:20,021 - server - INFO - gemini_prompt (first 120 chars): The VENUE IMAGE shows a fully decorated event venue. Your task is to add hospitality service staff to it.
+
+CRITICAL RULE
+2026-05-11 19:19:20,021 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 19:19:51,145 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 19:20:52,530 - server - INFO - === API RECEIVED ===
+2026-05-11 19:20:52,531 - server - INFO - prompt: a luxury coperate poolside party in night. Perspec...
+2026-05-11 19:20:52,533 - server - INFO - function_type: Corporate Conference
+2026-05-11 19:20:52,533 - server - INFO - space: Sky Terrace
+2026-05-11 19:20:52,534 - server - INFO - venue_image provided: True, length: 11013180
+2026-05-11 19:20:52,534 - server - INFO - design_image provided: True, length: 582804
+2026-05-11 19:20:52,534 - server - INFO - reference_image provided: True
+2026-05-11 19:20:52,534 - server - INFO - venue_image_url provided: True
+2026-05-11 19:20:52,535 - server - INFO - design_image_url provided: True
+2026-05-11 19:20:52,535 - server - INFO - variant_count: 1, mode: B, input_mode: dual_image
+2026-05-11 19:20:52,538 - server - INFO - gemini_prompt (first 120 chars): a luxury coperate poolside party in night. Perspective: Left View of Sky Terrace
+
+    FLOORING ELEMENT: The flooring mus
+2026-05-11 19:20:52,538 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 19:22:53,623 - server - ERROR - Image generation API timeout
+2026-05-11 19:22:56,190 - server - INFO - === API RECEIVED ===
+2026-05-11 19:22:56,191 - server - INFO - prompt: a luxury coperate poolside party in night. Perspec...
+2026-05-11 19:22:56,191 - server - INFO - function_type: Corporate Conference
+2026-05-11 19:22:56,191 - server - INFO - space: Sky Terrace
+2026-05-11 19:22:56,191 - server - INFO - venue_image provided: True, length: 11013180
+2026-05-11 19:22:56,191 - server - INFO - design_image provided: True, length: 582804
+2026-05-11 19:22:56,191 - server - INFO - reference_image provided: True
+2026-05-11 19:22:56,191 - server - INFO - venue_image_url provided: True
+2026-05-11 19:22:56,191 - server - INFO - design_image_url provided: True
+2026-05-11 19:22:56,191 - server - INFO - variant_count: 1, mode: B, input_mode: dual_image
+2026-05-11 19:22:56,192 - server - INFO - gemini_prompt (first 120 chars): a luxury coperate poolside party in night. Perspective: Left View of Sky Terrace
+
+    FLOORING ELEMENT: The flooring mus
+2026-05-11 19:22:56,192 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 19:24:17,062 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 19:25:58,974 - server - INFO - === API RECEIVED ===
+2026-05-11 19:25:58,975 - server - INFO - prompt: mercedes product launch. Perspective: Front View o...
+2026-05-11 19:25:58,976 - server - INFO - function_type: Product Launch
+2026-05-11 19:25:58,976 - server - INFO - space: Infinity Ballroom
+2026-05-11 19:25:58,977 - server - INFO - venue_image provided: True, length: 612460
+2026-05-11 19:25:58,977 - server - INFO - design_image provided: True, length: 616624
+2026-05-11 19:25:58,977 - server - INFO - reference_image provided: True
+2026-05-11 19:25:58,977 - server - INFO - venue_image_url provided: True
+2026-05-11 19:25:58,977 - server - INFO - design_image_url provided: True
+2026-05-11 19:25:58,977 - server - INFO - variant_count: 1, mode: B, input_mode: dual_image
+2026-05-11 19:25:58,977 - server - INFO - gemini_prompt (first 120 chars): mercedes product launch. Perspective: Front View of Infinity Ballroom
+
+    FLOORING ELEMENT: The flooring must be luxuri
+2026-05-11 19:25:58,978 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 19:26:25,136 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 19:26:32,155 - server - INFO - === API RECEIVED ===
+2026-05-11 19:26:32,156 - server - INFO - prompt: mercedes product launch. Perspective: Front View o...
+2026-05-11 19:26:32,156 - server - INFO - function_type: Product Launch
+2026-05-11 19:26:32,156 - server - INFO - space: Infinity Ballroom
+2026-05-11 19:26:32,156 - server - INFO - venue_image provided: True, length: 3652176
+2026-05-11 19:26:32,156 - server - INFO - design_image provided: False, length: 0
+2026-05-11 19:26:32,156 - server - INFO - reference_image provided: False
+2026-05-11 19:26:32,156 - server - INFO - venue_image_url provided: False
+2026-05-11 19:26:32,156 - server - INFO - design_image_url provided: False
+2026-05-11 19:26:32,156 - server - INFO - variant_count: 1, mode: B, input_mode: venue_only
+2026-05-11 19:26:32,156 - server - INFO - gemini_prompt (first 120 chars): The VENUE IMAGE shows a fully decorated event venue. Your task is to add hospitality service staff to it.
+
+CRITICAL RULE
+2026-05-11 19:26:32,156 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 19:27:07,601 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 19:29:10,426 - server - INFO - === API RECEIVED ===
+2026-05-11 19:29:10,427 - server - INFO - prompt: a night poolside coperate party. Perspective: Left...
+2026-05-11 19:29:10,427 - server - INFO - function_type: None
+2026-05-11 19:29:10,427 - server - INFO - space: Sky Terrace
+2026-05-11 19:29:10,427 - server - INFO - venue_image provided: True, length: 11013180
+2026-05-11 19:29:10,427 - server - INFO - design_image provided: True, length: 598244
+2026-05-11 19:29:10,427 - server - INFO - reference_image provided: True
+2026-05-11 19:29:10,427 - server - INFO - venue_image_url provided: True
+2026-05-11 19:29:10,427 - server - INFO - design_image_url provided: True
+2026-05-11 19:29:10,427 - server - INFO - variant_count: 1, mode: B, input_mode: dual_image
+2026-05-11 19:29:10,427 - server - INFO - gemini_prompt (first 120 chars): a night poolside coperate party. Perspective: Left View of Sky Terrace
+
+    FLOORING ELEMENT: The flooring must be luxur
+2026-05-11 19:29:10,428 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 19:30:20,321 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 503 Service Unavailable"
+2026-05-11 19:30:20,327 - server - WARNING - Nano Banana transient error (gemini-2.5-flash-image), retry 1/2. Status=503, body={
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+2026-05-11 19:31:41,803 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+WARNING:  StatReload detected changes in 'server.py'. Reloading...
+2026-05-11 19:35:28,825 - server - INFO - === API RECEIVED ===
+2026-05-11 19:35:28,826 - server - INFO - prompt: Night Party. Perspective: Left View of Sky Terrace...
+2026-05-11 19:35:28,826 - server - INFO - function_type: None
+2026-05-11 19:35:28,827 - server - INFO - space: Sky Terrace
+2026-05-11 19:35:28,827 - server - INFO - venue_image provided: True, length: 11013180
+2026-05-11 19:35:28,827 - server - INFO - design_image provided: True, length: 598244
+2026-05-11 19:35:28,830 - server - INFO - reference_image provided: True
+2026-05-11 19:35:28,830 - server - INFO - venue_image_url provided: True
+2026-05-11 19:35:28,831 - server - INFO - design_image_url provided: True
+2026-05-11 19:35:28,831 - server - INFO - variant_count: 1, mode: B, input_mode: dual_image
+2026-05-11 19:35:28,831 - server - INFO - gemini_prompt (first 120 chars): Night Party. Perspective: Left View of Sky Terrace
+Venue space: Sky Terrace at Fairmont Mumbai
+Output goal: one photorea
+2026-05-11 19:35:28,831 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 19:37:19,017 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 19:37:38,405 - server - INFO - === API RECEIVED ===
+2026-05-11 19:37:38,406 - server - INFO - prompt: Night Party. Perspective: Left View of Sky Terrace...
+2026-05-11 19:37:38,406 - server - INFO - function_type: None
+2026-05-11 19:37:38,406 - server - INFO - space: Sky Terrace
+2026-05-11 19:37:38,406 - server - INFO - venue_image provided: True, length: 3466012
+2026-05-11 19:37:38,407 - server - INFO - design_image provided: False, length: 0
+2026-05-11 19:37:38,407 - server - INFO - reference_image provided: False
+2026-05-11 19:37:38,407 - server - INFO - venue_image_url provided: False
+2026-05-11 19:37:38,407 - server - INFO - design_image_url provided: False
+2026-05-11 19:37:38,407 - server - INFO - variant_count: 1, mode: B, input_mode: venue_only
+2026-05-11 19:37:38,408 - server - INFO - gemini_prompt (first 120 chars): The VENUE IMAGE shows a fully decorated event venue. Your task is to add hospitality service staff to it.
+
+CRITICAL RULE
+2026-05-11 19:37:38,408 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 19:38:22,065 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 19:40:43,051 - server - INFO - === API RECEIVED ===
+2026-05-11 19:40:43,051 - server - INFO - prompt: Night Party. Perspective: Left View of Sky Terrace...
+2026-05-11 19:40:43,052 - server - INFO - function_type: Indian Destination Wedding
+2026-05-11 19:40:43,052 - server - INFO - space: Sky Terrace
+2026-05-11 19:40:43,052 - server - INFO - venue_image provided: True, length: 11013180
+2026-05-11 19:40:43,052 - server - INFO - design_image provided: True, length: 598244
+2026-05-11 19:40:43,052 - server - INFO - reference_image provided: True
+2026-05-11 19:40:43,053 - server - INFO - venue_image_url provided: True
+2026-05-11 19:40:43,053 - server - INFO - design_image_url provided: True
+2026-05-11 19:40:43,053 - server - INFO - variant_count: 1, mode: B, input_mode: dual_image
+2026-05-11 19:40:43,053 - server - INFO - gemini_prompt (first 120 chars): Night Party. Perspective: Left View of Sky Terrace
+Event type: Indian Destination Wedding
+Venue space: Sky Terrace at Fa
+2026-05-11 19:40:43,053 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 19:42:45,866 - server - ERROR - Image generation API timeout
+2026-05-11 19:42:54,538 - server - INFO - === API RECEIVED ===
+2026-05-11 19:42:54,539 - server - INFO - prompt: Night Party. Perspective: Left View of Sky Terrace...
+2026-05-11 19:42:54,539 - server - INFO - function_type: Indian Destination Wedding
+2026-05-11 19:42:54,539 - server - INFO - space: Sky Terrace
+2026-05-11 19:42:54,540 - server - INFO - venue_image provided: True, length: 11013180
+2026-05-11 19:42:54,540 - server - INFO - design_image provided: True, length: 598244
+2026-05-11 19:42:54,540 - server - INFO - reference_image provided: True
+2026-05-11 19:42:54,540 - server - INFO - venue_image_url provided: True
+2026-05-11 19:42:54,540 - server - INFO - design_image_url provided: True
+2026-05-11 19:42:54,541 - server - INFO - variant_count: 1, mode: B, input_mode: dual_image
+2026-05-11 19:42:54,541 - server - INFO - gemini_prompt (first 120 chars): Night Party. Perspective: Left View of Sky Terrace
+Event type: Indian Destination Wedding
+Venue space: Sky Terrace at Fa
+2026-05-11 19:42:54,541 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 19:44:55,189 - server - ERROR - Image generation API timeout
+2026-05-11 19:45:02,499 - server - INFO - === API RECEIVED ===
+2026-05-11 19:45:02,500 - server - INFO - prompt: Night Party. Perspective: Left View of Sky Terrace...
+2026-05-11 19:45:02,500 - server - INFO - function_type: Indian Destination Wedding
+2026-05-11 19:45:02,500 - server - INFO - space: Sky Terrace
+2026-05-11 19:45:02,500 - server - INFO - venue_image provided: True, length: 11013180
+2026-05-11 19:45:02,500 - server - INFO - design_image provided: True, length: 598244
+2026-05-11 19:45:02,500 - server - INFO - reference_image provided: True
+2026-05-11 19:45:02,500 - server - INFO - venue_image_url provided: True
+2026-05-11 19:45:02,500 - server - INFO - design_image_url provided: True
+2026-05-11 19:45:02,500 - server - INFO - variant_count: 1, mode: B, input_mode: dual_image
+2026-05-11 19:45:02,501 - server - INFO - gemini_prompt (first 120 chars): Night Party. Perspective: Left View of Sky Terrace
+Event type: Indian Destination Wedding
+Venue space: Sky Terrace at Fa
+2026-05-11 19:45:02,501 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 19:45:41,666 - server - INFO - === API RECEIVED ===
+2026-05-11 19:45:41,667 - server - INFO - prompt: mercedes product launch. Perspective: Front View o...
+2026-05-11 19:45:41,667 - server - INFO - function_type: Product Launch
+2026-05-11 19:45:41,667 - server - INFO - space: Grand Terminus 1
+2026-05-11 19:45:41,667 - server - INFO - venue_image provided: True, length: 198704
+2026-05-11 19:45:41,668 - server - INFO - design_image provided: True, length: 218140
+2026-05-11 19:45:41,668 - server - INFO - reference_image provided: True
+2026-05-11 19:45:41,668 - server - INFO - venue_image_url provided: True
+2026-05-11 19:45:41,668 - server - INFO - design_image_url provided: True
+2026-05-11 19:45:41,668 - server - INFO - variant_count: 1, mode: B, input_mode: dual_image
+2026-05-11 19:45:41,668 - server - INFO - gemini_prompt (first 120 chars): mercedes product launch. Perspective: Front View of Grand Terminus 1
+Event type: Product Launch
+Venue space: Grand Termi
+2026-05-11 19:45:41,669 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 19:46:04,826 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 19:46:13,884 - server - INFO - === API RECEIVED ===
+2026-05-11 19:46:13,884 - server - INFO - prompt: mercedes product launch. Perspective: Front View o...
+2026-05-11 19:46:13,884 - server - INFO - function_type: Product Launch
+2026-05-11 19:46:13,885 - server - INFO - space: Grand Terminus 1
+2026-05-11 19:46:13,885 - server - INFO - venue_image provided: True, length: 3441700
+2026-05-11 19:46:13,885 - server - INFO - design_image provided: False, length: 0
+2026-05-11 19:46:13,885 - server - INFO - reference_image provided: False
+2026-05-11 19:46:13,885 - server - INFO - venue_image_url provided: False
+2026-05-11 19:46:13,886 - server - INFO - design_image_url provided: False
+2026-05-11 19:46:13,886 - server - INFO - variant_count: 1, mode: B, input_mode: venue_only
+2026-05-11 19:46:13,886 - server - INFO - gemini_prompt (first 120 chars): The VENUE IMAGE shows a fully decorated event venue. Your task is to add hospitality service staff to it.
+
+CRITICAL RULE
+2026-05-11 19:46:13,886 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 19:46:59,894 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 19:47:02,862 - server - ERROR - Image generation API timeout
+2026-05-11 19:48:01,810 - server - INFO - === API RECEIVED ===
+2026-05-11 19:48:01,811 - server - INFO - prompt: coperate party in night. Perspective: Left View of...
+2026-05-11 19:48:01,811 - server - INFO - function_type: Corporate Conference
+2026-05-11 19:48:01,811 - server - INFO - space: Sky Terrace
+2026-05-11 19:48:01,812 - server - INFO - venue_image provided: True, length: 11013180
+2026-05-11 19:48:01,812 - server - INFO - design_image provided: True, length: 598244
+2026-05-11 19:48:01,812 - server - INFO - reference_image provided: True
+2026-05-11 19:48:01,812 - server - INFO - venue_image_url provided: True
+2026-05-11 19:48:01,812 - server - INFO - design_image_url provided: True
+2026-05-11 19:48:01,812 - server - INFO - variant_count: 3, mode: B, input_mode: dual_image
+2026-05-11 19:48:01,812 - server - INFO - gemini_prompt (first 120 chars): coperate party in night. Perspective: Left View of Sky Terrace
+Event type: Corporate Conference
+Venue space: Sky Terrace
+2026-05-11 19:48:01,812 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 19:50:03,187 - server - ERROR - Image generation API timeout
+2026-05-11 19:50:37,287 - server - INFO - === API RECEIVED ===
+2026-05-11 19:50:37,288 - server - INFO - prompt: coperate party in night. Perspective: Left View of...
+2026-05-11 19:50:37,289 - server - INFO - function_type: Corporate Conference
+2026-05-11 19:50:37,289 - server - INFO - space: Sky Terrace
+2026-05-11 19:50:37,289 - server - INFO - venue_image provided: True, length: 11013180
+2026-05-11 19:50:37,289 - server - INFO - design_image provided: True, length: 598244
+2026-05-11 19:50:37,289 - server - INFO - reference_image provided: True
+2026-05-11 19:50:37,289 - server - INFO - venue_image_url provided: True
+2026-05-11 19:50:37,289 - server - INFO - design_image_url provided: True
+2026-05-11 19:50:37,289 - server - INFO - variant_count: 1, mode: B, input_mode: dual_image
+2026-05-11 19:50:37,289 - server - INFO - gemini_prompt (first 120 chars): coperate party in night. Perspective: Left View of Sky Terrace
+Event type: Corporate Conference
+Venue space: Sky Terrace
+2026-05-11 19:50:37,290 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 19:52:25,775 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 19:53:32,049 - server - INFO - === API RECEIVED ===
+2026-05-11 19:53:32,049 - server - INFO - prompt: coperate party in night. Perspective: Left View of...
+2026-05-11 19:53:32,049 - server - INFO - function_type: Corporate Conference
+2026-05-11 19:53:32,049 - server - INFO - space: Sky Terrace
+2026-05-11 19:53:32,049 - server - INFO - venue_image provided: True, length: 3521628
+2026-05-11 19:53:32,049 - server - INFO - design_image provided: False, length: 0
+2026-05-11 19:53:32,049 - server - INFO - reference_image provided: False
+2026-05-11 19:53:32,049 - server - INFO - venue_image_url provided: False
+2026-05-11 19:53:32,049 - server - INFO - design_image_url provided: False
+2026-05-11 19:53:32,049 - server - INFO - variant_count: 1, mode: B, input_mode: venue_only
+2026-05-11 19:53:32,049 - server - INFO - gemini_prompt (first 120 chars): The VENUE IMAGE shows a fully decorated event venue. Your task is to add hospitality service staff to it.
+
+CRITICAL RULE
+2026-05-11 19:53:32,049 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 19:54:22,091 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 503 Service Unavailable"
+2026-05-11 19:54:22,097 - server - WARNING - Nano Banana transient error (gemini-2.5-flash-image), retry 1/2. Status=503, body={
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+2026-05-11 19:55:36,078 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 20:36:39,249 - server - INFO - === API RECEIVED ===
+2026-05-11 20:36:39,249 - server - INFO - prompt: wedding party. Perspective: Left View of Sky Terra...
+2026-05-11 20:36:39,249 - server - INFO - function_type: Indian Destination Wedding
+2026-05-11 20:36:39,249 - server - INFO - space: Sky Terrace
+2026-05-11 20:36:39,249 - server - INFO - venue_image provided: True, length: 11013180
+2026-05-11 20:36:39,249 - server - INFO - design_image provided: True, length: 582804
+2026-05-11 20:36:39,249 - server - INFO - reference_image provided: True
+2026-05-11 20:36:39,250 - server - INFO - venue_image_url provided: True
+2026-05-11 20:36:39,250 - server - INFO - design_image_url provided: True
+2026-05-11 20:36:39,250 - server - INFO - variant_count: 1, mode: B, input_mode: dual_image
+2026-05-11 20:36:39,250 - server - INFO - gemini_prompt (first 120 chars): wedding party. Perspective: Left View of Sky Terrace
+Event type: Indian Destination Wedding
+Venue space: Sky Terrace at 
+2026-05-11 20:36:39,250 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 20:37:30,858 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 20:37:37,109 - server - INFO - === API RECEIVED ===
+2026-05-11 20:37:37,110 - server - INFO - prompt: wedding party. Perspective: Left View of Sky Terra...
+2026-05-11 20:37:37,110 - server - INFO - function_type: Indian Destination Wedding
+2026-05-11 20:37:37,110 - server - INFO - space: Sky Terrace
+2026-05-11 20:37:37,110 - server - INFO - venue_image provided: True, length: 3726224
+2026-05-11 20:37:37,110 - server - INFO - design_image provided: False, length: 0
+2026-05-11 20:37:37,110 - server - INFO - reference_image provided: False
+2026-05-11 20:37:37,110 - server - INFO - venue_image_url provided: False
+2026-05-11 20:37:37,110 - server - INFO - design_image_url provided: False
+2026-05-11 20:37:37,110 - server - INFO - variant_count: 1, mode: B, input_mode: venue_only
+2026-05-11 20:37:37,110 - server - INFO - gemini_prompt (first 120 chars): The VENUE IMAGE shows a fully decorated event venue. Your task is to add hospitality service staff to it.
+
+CRITICAL RULE
+2026-05-11 20:37:37,111 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 20:37:56,805 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 21:00:29,773 - server - INFO - === API RECEIVED ===
+2026-05-11 21:00:29,774 - server - INFO - prompt: corporate event. Perspective: Front View of Infini...
+2026-05-11 21:00:29,775 - server - INFO - function_type: Corporate Conference
+2026-05-11 21:00:29,775 - server - INFO - space: Infinity Ballroom
+2026-05-11 21:00:29,775 - server - INFO - venue_image provided: True, length: 612460
+2026-05-11 21:00:29,775 - server - INFO - design_image provided: True, length: 599920
+2026-05-11 21:00:29,776 - server - INFO - reference_image provided: True
+2026-05-11 21:00:29,776 - server - INFO - venue_image_url provided: True
+2026-05-11 21:00:29,776 - server - INFO - design_image_url provided: True
+2026-05-11 21:00:29,776 - server - INFO - variant_count: 1, mode: B, input_mode: dual_image
+2026-05-11 21:00:29,777 - server - INFO - gemini_prompt (first 120 chars): corporate event. Perspective: Front View of Infinity Ballroom
+Event type: Corporate Conference
+Venue space: Infinity Bal
+2026-05-11 21:00:29,777 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 21:00:55,066 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
+2026-05-11 21:00:59,160 - server - INFO - === API RECEIVED ===
+2026-05-11 21:00:59,160 - server - INFO - prompt: corporate event. Perspective: Front View of Infini...
+2026-05-11 21:00:59,160 - server - INFO - function_type: Corporate Conference
+2026-05-11 21:00:59,160 - server - INFO - space: Infinity Ballroom
+2026-05-11 21:00:59,161 - server - INFO - venue_image provided: True, length: 3820988
+2026-05-11 21:00:59,161 - server - INFO - design_image provided: False, length: 0
+2026-05-11 21:00:59,161 - server - INFO - reference_image provided: False
+2026-05-11 21:00:59,161 - server - INFO - venue_image_url provided: False
+2026-05-11 21:00:59,161 - server - INFO - design_image_url provided: False
+2026-05-11 21:00:59,161 - server - INFO - variant_count: 1, mode: B, input_mode: venue_only
+2026-05-11 21:00:59,161 - server - INFO - gemini_prompt (first 120 chars): The VENUE IMAGE shows a fully decorated event venue. Your task is to add hospitality service staff to it.
+
+CRITICAL RULE
+2026-05-11 21:00:59,161 - server - INFO - Using Nano Banana (Gemini) for image generation — model: gemini-2.5-flash-image
+2026-05-11 21:01:15,866 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 503 Service Unavailable"
+2026-05-11 21:01:15,875 - server - WARNING - Nano Banana transient error (gemini-2.5-flash-image), retry 1/2. Status=503, body={
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+2026-05-11 21:01:43,013 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=AIzaSyDkpwkJ-E2t6UQf9lpMFgbglp2dTjNbW3c "HTTP/1.1 200 OK"
