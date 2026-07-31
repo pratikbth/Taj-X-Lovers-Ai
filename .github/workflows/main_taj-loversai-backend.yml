@@ -67,12 +67,14 @@ jobs:
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_272E796ED099423D98C9CE3C46C698D7 }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_F0B7FF982A644D898236C07E9259F9CA }}
 
+      - name: 'Zip Backend'
+        run: |
+          cd backend
+          zip -r ../deploy.zip .
+          
       - name: 'Deploy to Azure Web App'
         uses: azure/cli@v2
         with:
           azcliversion: latest
           inlineScript: |
-            cd backend
-            zip -r ../deploy.zip .
-            cd ..
             az webapp deployment source config-zip --resource-group taj-loversai-backend_group --name taj-loversai-backend --src deploy.zip
