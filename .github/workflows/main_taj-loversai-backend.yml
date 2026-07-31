@@ -68,9 +68,11 @@ jobs:
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_F0B7FF982A644D898236C07E9259F9CA }}
 
       - name: 'Deploy to Azure Web App'
-        uses: azure/webapps-deploy@v3
-        id: deploy-to-webapp
+        uses: azure/cli@v2
         with:
-          app-name: 'taj-loversai-backend'
-          slot-name: 'Production'
-          
+          azcliversion: latest
+          inlineScript: |
+            cd backend
+            zip -r ../deploy.zip .
+            cd ..
+            az webapp deployment source config-zip --resource-group taj-loversai-backend_group --name taj-loversai-backend --src deploy.zip
